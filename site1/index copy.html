@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--vendor css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/6cdfe06436.js" crossorigin="anonymous"></script>
+    <!--Custom css-->
+    <link rel="stylesheet" href="static/css/style.css">
+    <!--mail js-->
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_0lBHAUSVc18wA9j4fk6kg");
+        })();
+    </script>
+</head>
+
+<body>
+    <!-- navbar top-->
+    <nav class="navbar navbar-light  nav__top">
+        <div class='col-lg-3 nav__top-link'><a class="navbar-brand" href="#">Navbar</a></div>
+        <div class='col-lg-3 nav__top-link'><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#wmodal">Emergency</button></div>
+        <div class='col-lg-3 nav__top-link '><i class="fas fa-phone"></i> M - F 01222456789</div>
+        <div class='col-lg-3 nav__top-link text-right '><i class="fas fa-file-invoice"></i> Get A Quote</div>
+
+    </nav>
+    <!-- navbar bottom-->
+    <nav class="navbar  nav__bottom">
+        <div class=' col-lg-3 '></div>
+        <div class='col-6 col-md-2 col-lg-1 nav__link-active '><a href="" class="nav-link text-white">Home</a></div>
+        <div class='col-6 col-md-2 col-lg-1 nav__link '><a href="" class="nav-link text-white">About</a></div>
+        <div class='col-6 col-md-2 col-lg-1 nav__link '><a href=" " class="nav-link text-white ">Services</a>
+        </div>
+        <div class='col-6 col-md-2 col-lg-1 nav__link '>
+            <a href="" class="nav-link text-white">Contact</a></div>
+        <div class=' col-lg-2 '></div>
+        <div class='d-none d-sm-block col-md-2 col-lg-3 social__media '>
+            <i class="fab fa-facebook-square "></i>
+            <i class="fab fa-twitter-square "></i>
+            <i class="fab fa-instagram-square "></i>
+
+
+
+        </div>
+
+    </nav>
+    <div class="container-fluid">
+
+    </div>
+
+    <!-- Site footer -->
+    <footer class="site-footer">
+        <div class='row'>
+            <div class="col-md-8 footer__main">
+                <div class="row">
+                    <div class='col-md-6'>
+                        <h6>About</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum labore quasi ut eligendi, quisquam neque quae sed, delectus natus atque adipisci nostrum molestias ipsum harum obcaecati? Totam sunt reprehenderit facere!</p>
+                    </div>
+                    <div class='col-md-3'>
+                        <h6>Quick Links</h6>
+                        <ul class="footer-links">
+                            <li><a href="http://scanfcode.com/about/">About Us</a></li>
+                            <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+                            <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+                            <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+                            <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+                        </ul>
+                    </div>
+                    <div class='col-md-3'>
+                        <h6>Quick Links2</h6>
+                        <ul class="footer-links">
+                            <li><a href="http://scanfcode.com/about/">About Us</a></li>
+                            <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+                            <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+                            <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+                            <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-12'>
+                        <div class="col-5 offset-2 ">
+                            <ul class="social-icons">
+                                <li><a class="facebook" href="#"><i class="fab fa-facebook"></i></i></a></li>
+                                <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a class="dribbble" href="#"><i class="fab fa-dribbble"></i></a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div class='col-md-3 footer__form'>
+                <h6>Request A Quote</h6>
+                <form onsubmit="return sendMail(this)" id="contact_form">
+
+                    <input type="text" id="name" class="form-control" name="name" placeholder="YOUR NAME"><br>
+                    <input type="email" id="email" class="form-control" name="email" placeholder="YOUR EMAIL"><br>
+                    <input type="text" id="subject" class="form-control" name="subject" placeholder="SUBJECT"><br>
+                    <textarea class="form-control" name='message' id="message" placeholder="MESSAGE"></textarea>
+                    <input type='hidden' value='x' id='contactNumber' name='contactNumber' />
+                    <button type="submit" class="btn btn-warning">Send</button>
+                </form>
+            </div>
+
+        </div>
+
+
+    </footer>
+    <div class='row copyright'>
+        <div class='col-md-8 scruffy__link'><a href='https://scruffyhorse.com' class='text-white'>site by Scruffy Horse Media</a></div>
+    </div>
+
+
+
+    <!-- modal for emergency-->
+    <div class="modal fade " id="wmodal" tabindex="-1 " role="dialog " aria-labelledby="exampleModalLabel " aria-hidden="true ">
+        <div class="modal-dialog " role="document ">
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <h5 class="modal-title " id="exampleModalLabel ">New message</h5>
+
+                    <span aria-hidden="true ">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body ">
+                    <form onsubmit="return sendMail(this)" id="contact_form">
+                        <div class="form-group ">
+                            <label for="contact-number" class="col-form-label ">Contact Number:</label>
+                            <input type="text " class="form-control " id="contactNumber" name='contactNumber'>
+                        </div>
+                        <div class="form-group ">
+                            <label for="message-text " class="col-form-label ">Message:</label>
+                            <textarea class="form-control " id="message " name='message'></textarea>
+                        </div>
+                        <input type="hidden" id="name" value="emergency" name="name" placeholder="YOUR NAME"><br>
+                        <input type="hidden" id="email" value='emergency' name="email"><br>
+                        <input type='hidden' value='emergency' id='subject' name='subject' />
+                        <button type="submit" class="btn btn-warning">Send</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--Vendor jscript cdn-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
+    <script src=' static/js/jscript.js '></script>
+    <script src="static/js/sendEmail.js"></script>
+
+</body>
+
+</html>
