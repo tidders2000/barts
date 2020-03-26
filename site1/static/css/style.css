@@ -15,6 +15,17 @@ body {
     margin-right: 0!important;
 }
 
+section {
+    background-color: white;
+}
+
+.section__head {
+    padding: 30px;
+    font-size: 30px;
+    color: #1580E2;
+    text-transform: uppercase;
+}
+
 
 /*............... top nav bar...................*/
 
@@ -494,4 +505,89 @@ input.break {
         left: 58%;
         opacity: 0;
     }
+}
+
+
+/* cards*/
+
+.card__holder {
+    display: block;
+    margin-top: 10px;
+    padding-bottom: 100px;
+    ;
+}
+
+.card {
+    margin: auto;
+}
+
+.card-img-top {
+    width: 286px;
+    height: 190;
+}
+
+
+/*square 4*/
+
+.projects-section {
+    padding: 5rem 0;
+}
+
+.projects-section .featured-text {
+    padding: 2rem;
+}
+
+.project {
+    padding: 20px;
+}
+
+
+/* feedback*/
+
+.feedback {
+    background-image: url('../images/feedback.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 320px;
+    margin-bottom: 50px;
+}
+
+
+/* map */
+
+
+/* facts and figures*/
+
+.ode__cont {
+    margin-left: 50px;
+    margin-right: 50px;
+    background-image: linear-gradient(to top left, white, #1580E2, darkblue);
+    border-radius: 2px;
+}
+
+.ode__holder {
+    height: 350px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+}
+
+.odemeter {
+    font-size: 5rem!important;
+}
+
+.ode-text {
+    font-size: 30px;
+    color: white;
+}
+
+.map__holder {
+    height: 500px;
+    margin-bottom: 50px;
+    ;
+}
+
+#map {
+    height: 500px;
 }
