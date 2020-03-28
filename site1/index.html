@@ -30,14 +30,19 @@
     <div class='nav__top'>
         <div class='row'>
 
-            <div class='col-md-3 nav__top-link d-none d-sm-none d-md-block'><a class="navbar-brand" href="#">Navbar</a></div>
-            <div class='col-5 col-md-3 nav__top-link'><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#wmmodal">Emergency</button></div>
-            <div class='col-7 col-md-3 nav__top-link '><i class="fas fa-phone"></i> M - F 01222456789</div>
-            <div class='col-md-3 nav__top-link  d-none d-sm-none d-md-block'><i class="fas fa-file-invoice"></i> Get A Quote
+            <div class='col-md-3  d-none d-sm-none d-md-block'>
+                <a class="navbar-brand" href="index.html"><img src="static/images/logo.png" alt="logo" />Bartholomews</a>
             </div>
-
-
         </div>
+        <div class='col-5 col-md-3 nav__top-link'><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">Emergency</button></div>
+        <div class='col-7 col-md-3 nav__top-link '><i class="fas fa-phone"></i> M - F <a href="tel:01476879189">01222456789</a></div>
+        <div class='col-md-3 nav__top-link  d-none d-sm-none d-md-block'><i class="fas fa-file-invoice"></i> <a href='contact.html'>Get A Quote</a></div>
+    </div>
+
+
+
+
+    </div>
 
 
     </div>
@@ -49,11 +54,11 @@
     <nav class="navbar  nav__bottom">
         <div class=' col-lg-3 '></div>
         <div class='col-6 col-md-2 col-lg-1 nav__link-active '><a href="" class="nav-link text-white">Home</a></div>
-        <div class='col-6 col-md-2 col-lg-1 nav__link '><a href="" class="nav-link text-white">About</a></div>
-        <div class='col-6 col-md-2 col-lg-1 nav__link '><a href=" " class="nav-link text-white ">Services</a>
+        <div class='col-6 col-md-2 col-lg-1 nav__link '><a href="about.html" class="nav-link text-white">About</a></div>
+        <div class='col-6 col-md-2 col-lg-1 nav__link '><a href="services.html " class="nav-link text-white ">Services</a>
         </div>
         <div class='col-6 col-md-2 col-lg-1 nav__link '>
-            <a href="" class="nav-link text-white">Contact</a></div>
+            <a href="contact.html" class="nav-link text-white">Contact</a></div>
         <div class=' col-lg-2 '></div>
         <div class=' col-md-2 col-lg-3 social__media '>
             <i class="fab fa-facebook-square "></i>
@@ -71,7 +76,7 @@
 
     <div class="splash ">
         <img src=" static/images/landing_image.png " class="img-fluid " alt="refridgeration " />
-        <div class="top-left "><span class='title'>BARTHOLOMEWS</span><br>Commercial Refrigeration <br>specialists <br><span class='title'>07722879314</span></div>
+        <div class="top-left "><img src='static/images/logo_trans.png' /><br><span class='title'>BARTHOLOMEWS</span><br>Commercial Refrigeration <br>specialists <br><span class='title'>07722879314</span></div>
         <p class="item-1 d-none d-sm-block">AirCon</p>
         <p class="item-2 d-none d-sm-block">Cellars</p>
         <p class="item-3 d-none d-sm-block">Fitting</p>
@@ -144,7 +149,7 @@
                 <!-- Project Two Row -->
                 <div class="row justify-content-center no-gutters" data-aos="fade-up">
                     <div class="col-lg-6 ">
-                        <img class="img-fluid " src="static/images/construction.jpg " alt=" contruction site">
+                        <img class="img-fluid " src="static/images/const2.jpg " alt=" contruction site">
                     </div>
                     <div class="col-lg-6 order-lg-first ">
                         <div class="bg-black text-center h-100 project ">
@@ -167,22 +172,21 @@
             <div class='section__head'> Feedback</div>
             <div class='row' data-aos="fade-up">
 
-                <div class='col-sm-12 col-md-4 feedback'></div>
+                <div class='col-sm-12 col-md-6 col-lg-4 feedback '></div>
 
-                <div class='col-sm-12 col-md-4 feedback'></div>
-                <div class='col-sm-12 col-md-4 feedback'></div>
-            </div>
+                <div class='col-sm-12 col-md-6 col-lg-4 feedback d-none d-md-none d-md-block'></div>
+                <div class='col-sm-12 col-md-4 feedback d-none d-md-none d-md-none d-lg-block'></div>
 
         </section>
 
         <!--facts and figures-->
-        <section class='d-none d-md-block'>
-            <div class='section__head'> Facts & figures</div>
-            <div class='ode__cont' id='#ode__cont' data-aos="fade-up">
-                <div class='row'>
+        <section class=' d-none d-md-block '>
+            <div class='section__head '> Facts & figures</div>
+            <div class='ode__cont ' id='#ode__cont ' data-aos="fade-up">
+                <div class='row '>
 
 
-                    <div class='col-sm-12 col-md-4 ode__holder'>
+                    <div class='col-sm-12 col-md-4 ode__holder '>
 
 
                         <div id="odometer" class="odometer">123</div>
@@ -191,160 +195,172 @@
 
                     </div>
 
-                    <div class='col-sm-12 col-md-4 ode__holder'>
-                        <div id="odometer2" class="odometer">0</div>%
-                        <p class='ode-text '>Customer <br>Feedback</p>
+                    <div class='col-sm-12 col-md-4 ode__holder '>
+                        <div id="odometer2" class="odometer">0</div>
+                        <p class='ode-text '>Percent<br>Customer <br>Feedback</p>
                     </div>
-                    <div class='col-sm-12 col-md-4 ode__holder'>
+                    <div class='col-sm-12 col-md-4 ode__holder '>
                         <div id="odometer3" class="odometer">0</div>
                         <p class='ode-text '>Coffee's <br>Consummed</p>
                     </div>
                 </div>
             </div>
+            <div class='row standards_holder'>
+                <div class='col-6 col-md-4' data-aos="slide-right">
+                    <img src='static/images/gas_safe.png' /> </div>
+                <div class='col-6 col-md-4' data-aos="fade-up">
+                    <img src='static/images/bsi.png' /> </div>
 
-        </section>
+                <div class='col-6 col-md-4' data-aos="slide-left">
+                    <img src='static/images/wars.png' /> </div>
+            </div>
+            </div>
 
+    </div>
 
-
-
-
-
-        <!--areas we cover-->
-        <section>
-            <div class='section__head'> Areas We Cover</div>
-            <div class='row'>
-                <div class='col-sm-12 map__holder'>
-
-                    <div id="map" data-aos="fade-up"></div>
-
-                </div>
-        </section>
-        </div>
-
-        <!-- Site footer -->
+    </section>
 
 
+
+
+
+
+    <!--areas we cover-->
+    <section>
+        <div class='section__head'> Areas We Cover</div>
         <div class='row'>
-            <div class="col-12 col-md-6 col-lg-8 footer__main ">
-                <footer class=" site-footer ">
-                    <div class="row ">
-                        <div class='col-12'>
-                            <h6>About</h6>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum labore quasi ut eligendi, quisquam neque quae sed, delectus natus atque adipisci nostrum molestias ipsum harum obcaecati? Totam sunt reprehenderit facere!</p>
-                        </div>
-                        <div class='col-6 d-none d-sm-none d-md-none d-lg-block'>
-                            <h6>Quick Links</h6>
-                            <ul class="footer-links ">
-                                <li><a href="http://scanfcode.com/about/ ">About Us</a></li>
-                                <li><a href="http://scanfcode.com/contact/ ">Contact Us</a></li>
-                                <li><a href="http://scanfcode.com/contribute-at-scanfcode/ ">Contribute</a></li>
-                                <li><a href="http://scanfcode.com/privacy-policy/ ">Privacy Policy</a></li>
-                                <li><a href="http://scanfcode.com/sitemap/ ">Sitemap</a></li>
-                            </ul>
-                        </div>
-                        <div class='col-6 d-none d-sm-none d-md-none d-lg-block'>
-                            <h6>Quick Links2</h6>
-                            <ul class="footer-links ">
-                                <li><a href="http://scanfcode.com/about/ ">About Us</a></li>
-                                <li><a href="http://scanfcode.com/contact/ ">Contact Us</a></li>
-                                <li><a href="http://scanfcode.com/contribute-at-scanfcode/ ">Contribute</a></li>
-                                <li><a href="http://scanfcode.com/privacy-policy/ ">Privacy Policy</a></li>
-                                <li><a href="http://scanfcode.com/sitemap/ ">Sitemap</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class='row'>
-                        <div class='col-12 m_holder'>
+            <div class='col-sm-12 map__holder'>
 
-                            <ul class="social-icons ">
-                                <li><a class="facebook " href="# "><i class="fab fa-facebook "></i></i></a></li>
-                                <li><a class="twitter " href="# "><i class="fab fa-twitter "></i></a></li>
-                                <li><a class="dribbble " href="# "><i class="fab fa-dribbble "></i></a></li>
-                            </ul>
+                <div id="map" data-aos="fade-up"></div>
 
-                        </div>
-
-
-                    </div>
-
-                </footer>
-            </div>
-            <div class='col-md-6 col-lg-4 footer__form'>
-                <h6>Request A Quote</h6>
-                <form onsubmit="return sendMail(this) " id="contact_form ">
-
-                    <input type="text " id="name " class="form-control " name="name " placeholder="YOUR NAME "><br>
-                    <input type="email " id="email " class="form-control " name="email " placeholder="YOUR EMAIL "><br>
-                    <input type="text " id="subject " class="form-control " name="subject " placeholder="SUBJECT "><br>
-                    <textarea class="form-control " name='message' id="message " placeholder="MESSAGE "></textarea>
-                    <input type='hidden' value='x' id='contactNumber' name='contactNumber' />
-                    <button type="submit " class="btn btn-warning ">Send</button>
-                </form>
             </div>
 
+    </section>
+    </div>
+
+    <!-- Site footer -->
+
+
+    <div class='row'>
+        <div class="col-12 col-md-6 col-lg-8 footer__main ">
+            <footer class=" site-footer ">
+                <div class="row ">
+                    <div class='col-12'>
+                        <h6>About</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum labore quasi ut eligendi, quisquam neque quae sed, delectus natus atque adipisci nostrum molestias ipsum harum obcaecati? Totam sunt reprehenderit facere!</p>
+                    </div>
+                    <div class='col-6 d-none d-sm-none d-md-none d-lg-block'>
+                        <h6>Address</h6>
+                        <p>
+                            first line<br> second line<br> postcode
+
+
+                        </p>
+                    </div>
+                    <div class='col-6 d-none d-sm-none d-md-none d-lg-block'>
+                        <h6>Quick Links</h6>
+                        <ul class="footer-links ">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html ">Contact Us</a></li>
+                            <li><a href="services ">Services</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='col-12 m_holder'>
+
+                        <ul class="social-icons ">
+                            <li><a class="facebook " href="# "><i class="fab fa-facebook "></i></i></a></li>
+                            <li><a class="twitter " href="# "><i class="fab fa-twitter "></i></a></li>
+                            <li><a class="dribbble " href="# "><i class="fab fa-dribbble "></i></a></li>
+                        </ul>
+
+                    </div>
+
+
+                </div>
+
+            </footer>
+        </div>
+        <div class='col-md-6 col-lg-4 footer__form'>
+            <h6>Request A Quote</h6>
+            <form onsubmit="return sendMailTwo(this)" id="con_form">
+
+                <input type="text " id="name" class="form-control " placeholder="YOUR NAME "><br>
+                <input type="email" id="email" class="form-control " placeholder="YOUR EMAIL "><br>
+                <input type="text " id="subject" class="form-control " placeholder="SUBJECT "><br>
+                <textarea class="form-control " id="message" placeholder="MESSAGE "></textarea>
+
+                <button type="submit " class="btn btn-warning ">Send</button>
+            </form>
         </div>
 
-
-        <div class='col-12 scruffy__link'>
-            <a href='https://scruffyhorse.com'>site by Scruffy Horse Media</a>
-        </div>
+    </div>
 
 
-
-
+    <div class='col-12 scruffy__link'>
+        <a href='https://scruffyhorse.com'>site by Scruffy Horse Media</a>
+    </div>
 
 
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <form onsubmit="return sendMail(this)" id="contact_form">
+                        <div class="form-group">
+                            <label for="name" class="col-form-label">Name:</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactNumber" class="col-form-label">Tel:</label>
+                            <input type="text" class="form-control" id="contactNumber">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message"></textarea>
+                        </div>
 
 
-
-
-
-        <!-- modal for emergency-->
-        <div class="modal fade " id="wmmodal " tabindex="-1 " role="dialog " aria-labelledby="exampleModalLabel " aria-hidden="true ">
-            <div class="modal-dialog " role="document ">
-                <div class="modal-content ">
-                    <div class="modal-header ">
-                        <h5 class="modal-title " id="exampleModalLabel ">New message</h5>
-
-                        <span aria-hidden="true ">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body ">
-                        <form onsubmit="return sendMail(this) " id="contact_form ">
-                            <div class="form-group ">
-                                <label for="contact-number " class="col-form-label ">Contact Number:</label>
-                                <input type="text " class="form-control " id="contactNumber " name=' contactNumber '>
-                            </div>
-                            <div class="form-group ">
-                                <label for="message-text " class="col-form-label ">Message:</label>
-                                <textarea class="form-control " id="message " name='message '></textarea>
-                            </div>
-                            <input type="hidden " id="name " value="emergency " name="name " placeholder="YOUR NAME "><br>
-                            <input type="hidden " id="email " value='emergency ' name="email "><br>
-                            <input type='hidden ' value='emergency ' id='subject ' name='subject ' />
-                            <button type="submit " class="btn btn-warning ">Send</button>
-                        </form>
-                    </div>
+                        <button type="submit" class="btn btn-warning">Send message</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button hidden type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
 
                 </div>
             </div>
         </div>
+    </div>
 
 
-        <!--Vendor jscript cdn-->
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
-        <script src=' static/js/jscript.js '></script>
-        <script src="static/js/sendEmail.js "></script>
-        <script src=' static/js/odometer.min.js '></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
-        <script src="static/js/maps.js"></script>
-        <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDHHyac2SiOYPNYxXMK7rqJjnB8nCaaxE&callback=initMap"></script>
+
+
+
+    <!--Vendor jscript cdn-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
+    <script src=' static/js/jscript.js '></script>
+    <script src="static/js/sendEmail.js "></script>
+    <script src=' static/js/odometer.min.js '></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <script src="static/js/maps.js"></script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDHHyac2SiOYPNYxXMK7rqJjnB8nCaaxE&callback=initMap"></script>
 
 
 

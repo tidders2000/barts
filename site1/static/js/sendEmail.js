@@ -1,14 +1,14 @@
 const clear = () => {
-    document.getElementById("contact_form").reset();
-    $('#wmodal').modal('hide')
+    document.getElementById("con_form").reset();
+    $('#exampleModal').modal('hide')
 }
 
 const confirm = () => {
     html = `<div class="alert alert-success" role="alert">
-   Message sent
-  </div>`
+       Message sent
+      </div>`
 
-    document.querySelector('.container-fluid').insertAdjacentHTML('beforebegin', html);
+    document.querySelector('.splash').insertAdjacentHTML('beforebegin', html);
     setTimeout(function() { document.querySelector('.alert').style.display = 'none'; }, 5000);
 
 }
@@ -16,22 +16,23 @@ const confirm = () => {
 
 function sendMail(contactform) {
 
-    emailjs.send("gmail", "resume", {
-        "from_name": contactform.name.value,
-        "from_email": contactform.email.value,
-        "subject": contactform.subject.value,
-        "message": contactform.message.value,
-        "contact": contactform.contactNumber.value,
 
+    emailjs.send("gmail", "resume", {
+
+        "from_name": contactform.name.value,
+        "subject": 'Emergency',
+        "from_email": '',
+        "message": contactform.message.value,
+        "contactNumber": contactform.contactNumber.value,
 
     })
 
     .then(
         function(response) {
             console.log("SUCCESS", response);
-            clear();
-            confirm();
 
+            confirm();
+            clear();
         },
         function(error) {
             console.log("FAILED", error);
@@ -39,6 +40,30 @@ function sendMail(contactform) {
     );
     return false; // To block from loading a new page
 }
-// clear down fields
-//display success alert
-//auto close alert
+
+function sendMailTwo(form) {
+
+
+    emailjs.send("gmail", "resume", {
+
+        "from_name": form.name.value,
+        "subject": form.subject.value,
+        "from_email": form.email.value,
+        "message": form.message.value,
+        "contactNumber": "",
+
+    })
+
+    .then(
+        function(response) {
+            console.log("SUCCESS", response);
+
+            confirm();
+            clear();
+        },
+        function(error) {
+            console.log("FAILED", error);
+        }
+    );
+    return false; // To block from loading a new page
+}

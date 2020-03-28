@@ -1,10 +1,9 @@
 $(document).ready(function() {
 
-    2
-    3
-    $(".btn-danger").click(function() {
-        $('#wmmodal').modal('show')
-    });
+
+
+
+
 
 
 
@@ -27,6 +26,6 @@ $(document).ready(function() {
     observer.observe(document.querySelector(".odometer"));
 
 
-
+    $('#wmmodal').modal('show')
 
 });

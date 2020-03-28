@@ -3,8 +3,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Sen', sans-serif;
-    background-color: #ffffff;
-    background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
+    background-color: #F6F6F6;
+    /*background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");*/
 }
 
 .whitebg {
@@ -19,6 +19,10 @@ section {
     background-color: white;
 }
 
+.page__splash {
+    height: 300px;
+}
+
 .section__head {
     padding: 30px;
     font-size: 30px;
@@ -26,8 +30,16 @@ section {
     text-transform: uppercase;
 }
 
+.col {
+    padding-left: 0!important;
+}
+
 
 /*............... top nav bar...................*/
+
+.navbar-brand {
+    color: #366B33!important;
+}
 
 .nav__top {
     height: 100px;
@@ -40,10 +52,23 @@ section {
     font-size: 20px;
     padding-right: 0;
     padding-left: 0;
+    vertical-align: baseline;
+    padding-top: 20px;
+    ;
+}
+
+.nav__top-link a {
+    color: darkgray;
 }
 
 .text-right {
     text-align: right;
+}
+
+@media (max-width: 576px) {
+    .nav__top-link button {
+        margin-left: 10px;
+    }
 }
 
 
@@ -61,9 +86,10 @@ section {
 /* style for nav link button*/
 
 .nav__link {
+    padding-left: 0!important;
     padding-top: 38px;
     height: 100px;
-    font-size: 12px;
+    font-size: 1rem;
     text-align: center;
 }
 
@@ -72,11 +98,12 @@ section {
 }
 
 .nav__link-active {
+    padding-left: 0!important;
     background-color: #8897AE;
     padding-top: 38px;
     height: 100px;
-    font-size: 12px;
     text-align: center;
+    font-size: 1rem;
 }
 
 
@@ -85,8 +112,8 @@ section {
 .nav-link {
     text-align: center;
     text-transform: uppercase;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
     -webkit-animation-timing-function: ease-in-out;
@@ -97,7 +124,7 @@ section {
 
 .nav-link:hover {
     cursor: pointer;
-    animation-name: bounce;
+    /*animation-name: bounce;*/
     -moz-animation-name: bounce;
 }
 
@@ -112,9 +139,9 @@ section {
         transform: translateY(0)
     }
     40% {
-        -webkit-transform: translateY(-30px);
-        -ms-transform: translateY(-30px);
-        transform: translateY(-30px)
+        -webkit-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+        transform: translateY(-20px)
     }
     60% {
         -webkit-transform: translateY(-15px);
@@ -133,6 +160,11 @@ section {
 .social__media i {
     font-size: 20px;
     padding: 10px;
+    cursor: pointer;
+}
+
+.social__media i:hover {
+    color: #8897AE;
 }
 
 
@@ -430,10 +462,23 @@ input.break {
     top: 1em;
     width: 40%;
     font-size: 80px;
-    color: greenyellow;
+    color: #366B33;
     animation-duration: 10s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
+}
+
+
+/* non index pages*/
+
+.item {
+    position: absolute;
+    left: 50%;
+    display: block;
+    top: 1em;
+    width: 40%;
+    font-size: 80px;
+    color: white;
 }
 
 @media (max-width:767px) {
@@ -590,4 +635,90 @@ input.break {
 
 #map {
     height: 500px;
+}
+
+.standards_holder {
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-bottom: 30px;
+}
+
+
+/*.........................contact.........................*/
+
+.contact_holder {
+    padding-top: 50px;
+}
+
+.contact_map {
+    padding-top: 30px;
+}
+
+.contact {
+    padding-left: 40px;
+}
+
+.contact i {
+    color: #8897AE;
+}
+
+.contact p {
+    color: black;
+}
+
+
+/*.................about...............*/
+
+.showcase {
+    padding-bottom: 30px;
+}
+
+.showcase .showcase-text {
+    padding: 3rem;
+}
+
+.showcase .showcase-img {
+    min-height: 30rem;
+    background-size: cover;
+}
+
+@media (min-width: 768px) {
+    .showcase .showcase-text {
+        padding: 7rem;
+    }
+}
+
+.features-icons {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.features-icons .features-icons-item {
+    max-width: 20rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon {
+    height: 7rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon i {
+    font-size: 4.5rem;
+}
+
+.features-icons .features-icons-item:hover .features-icons-icon i {
+    font-size: 5rem;
+}
+
+.testimonials {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.testimonials .testimonial-item {
+    max-width: 18rem;
+}
+
+.testimonials .testimonial-item img {
+    max-width: 12rem;
+    box-shadow: 0px 5px 5px 0px #adb5bd;
 }
