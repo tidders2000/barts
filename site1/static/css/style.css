@@ -20,7 +20,7 @@ section {
 }
 
 .page__splash {
-    height: 300px;
+    height: 320px;
 }
 
 .section__head {
@@ -423,7 +423,7 @@ input.break {
 }
 
 .img-fluid {
-    min-height: 300px!important;
+    min-height: 330px!important;
 }
 
 .top-left {
