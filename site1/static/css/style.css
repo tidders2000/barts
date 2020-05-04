@@ -34,6 +34,13 @@ section {
     padding-left: 0 !important;
 }
 
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 /*............... top nav bar...................*/
 
@@ -444,7 +451,7 @@ input.break {
     height: 100%;
     text-align: center;
     padding-top: 5%;
-    color: darkblue;
+    color: white;
     font-weight: 400;
     font-size: 30px;
 }
@@ -469,7 +476,7 @@ input.break {
     top: 1em;
     width: 40%;
     font-size: 80px;
-    color: #366B33;
+    color: #B28E31;
     animation-duration: 10s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
@@ -602,6 +609,8 @@ input.break {
     background-position: center;
     height: 320px;
     margin-bottom: 50px;
+    text-align: center;
+    padding: 10%;
 }
 
 
@@ -648,6 +657,21 @@ input.break {
     padding-top: 30px;
     padding-left: 100px;
     padding-bottom: 30px;
+}
+
+.standards_holder img {
+    height: 100px;
+    width: 250px;
+}
+
+@media (max-width: 776px) {
+    .standards_holder {
+        padding-left: 70px;
+    }
+    .standards_holder img {
+        height: 50px;
+        width: 125px
+    }
 }
 
 
