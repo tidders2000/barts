@@ -43,6 +43,13 @@ i {
     border: #A0D3F9;
 }
 
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 /*............... top nav bar...................*/
 
@@ -435,11 +442,11 @@ input.break {
 
 .splash {
     position: relative;
-    min-height: 350px;
+    min-height: 400px;
 }
 
 .img-fluid {
-    min-height: 350px !important;
+    min-height: 400px !important;
 }
 
 .top-left {
@@ -612,6 +619,8 @@ input.break {
     background-position: center;
     height: 320px;
     margin-bottom: 50px;
+    text-align: center;
+    padding: 10%;
 }
 
 
@@ -658,6 +667,24 @@ input.break {
     padding-top: 30px;
     padding-left: 100px;
     padding-bottom: 30px;
+}
+
+.standards_holder img {
+    height: 100px;
+    width: 250px;
+}
+
+@media (max-width: 776px) {
+    .standards_holder {
+        padding-left: 70px;
+    }
+    .standards_holder img {
+        height: 50px;
+        width: 125px
+    }
+    .ode__holder {
+        font-size: 3rem;
+    }
 }
 
 
