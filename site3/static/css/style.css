@@ -483,11 +483,11 @@ input.break {
 .item-2,
 .item-3 {
     position: absolute;
-    left: 60%;
+    left: 40%;
     display: block;
-    top: 1em;
+    top: 4em;
     width: 40%;
-    font-size: 80px;
+    font-size: 50px;
     color: #f0f0f0;
     animation-duration: 10s;
     animation-timing-function: ease-in-out;
@@ -507,9 +507,13 @@ input.break {
     color: white;
 }
 
-@media (max-width:767px) {
+@media (max-width:769px) {
     .social-icons li.title {
         font-size: 40px;
+    }
+    .item {
+        left: 50%;
+        font-size: 50px;
     }
 }
 

@@ -443,7 +443,7 @@ input.break {
 .top-left {
     position: absolute;
     top: 0px;
-    left: 0pxx;
+    left: 0px;
     background: rgb(0, 0, 0);
     width: 35%;
     background: rgba(0, 0, 0, 0.5);
@@ -471,11 +471,11 @@ input.break {
 .item-2,
 .item-3 {
     position: absolute;
-    left: 50%;
+    left: 10%;
     display: block;
-    top: 1em;
+    top: 3em;
     width: 40%;
-    font-size: 80px;
+    font-size: 50px;
     color: #B28E31;
     animation-duration: 10s;
     animation-timing-function: ease-in-out;
@@ -489,13 +489,13 @@ input.break {
     position: absolute;
     left: 50%;
     display: block;
-    top: 1em;
+    top: 3em;
     width: 40%;
-    font-size: 80px;
+    font-size: 50px;
     color: white;
 }
 
-@media (max-width:767px) {
+@media (max-width:769px) {
     .social-icons li.title {
         font-size: 40px;
     }
