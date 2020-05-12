@@ -7,6 +7,11 @@ body {
     /*background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");*/
 }
 
+ul {
+    font-size: 20px;
+    font-family: 'Sen', sans-serif;
+}
+
 .whitebg {
     background-color: #ffffff;
 }
