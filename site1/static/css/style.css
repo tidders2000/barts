@@ -686,6 +686,24 @@ input.break {
     padding-top: 50px;
 }
 
+.contact_para {
+    margin: 50px;
+    font-size: 20px;
+}
+
+@media (max-width: 576px) {
+    .contact_para {
+        margin: 30px;
+        font-size: 18px;
+    }
+}
+
+.contact_para i {
+    color: lightgray;
+    margin-right: 10px;
+    ;
+}
+
 .contact_map {
     padding-top: 30px;
 }
