@@ -70,7 +70,7 @@ i {
 
 .nav__top-link {
     color: darkgray;
-    font-size: 20px;
+    font-size: 16px;
     padding-right: 0;
     padding-left: 0;
     vertical-align: baseline;
@@ -89,6 +89,9 @@ i {
 @media (max-width: 576px) {
     .nav__top-link button {
         margin-left: 10px;
+    }
+    .nav__top-link {
+        font-size: 15px;
     }
     .nav__bottom {
         margin-top: 10px;
