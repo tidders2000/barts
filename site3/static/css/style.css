@@ -679,26 +679,30 @@ input.break {
 
 .standards_holder {
     padding-top: 30px;
-    padding-left: 100px;
     padding-bottom: 30px;
 }
 
 .standards_holder img {
-    height: 100px;
+    height: 150px;
     width: 250px;
 }
 
 @media (max-width: 776px) {
-    .standards_holder {
-        padding-left: 70px;
-    }
     .standards_holder img {
-        height: 50px;
+        height: 100px;
         width: 125px
     }
-    .ode__holder {
-        font-size: 3rem;
+}
+
+@media (max-width: 576px) {
+    .standards_holder img {
+        height: 50px;
+        width: 62px
     }
+}
+
+.ode__holder {
+    font-size: 3rem;
 }
 
 
